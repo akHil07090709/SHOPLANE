@@ -56,10 +56,18 @@ $(document).ready(function () {
   document.getElementById("cart").addEventListener("click", function () {
     location.href = "checkout.html";
   });
-
-  document.getElementById("cartCount").innerHTML = localStorage.getItem(
-    "cartCount"
-  );
+  console.log(localStorage.getItem("cartCount"));
+  if (
+    localStorage.getItem("cartCount") == "" ||
+    localStorage.getItem("cartCount") == null ||
+    localStorage.getItem("cartCount") == undefined
+  ) {
+    document.getElementById("cartCount").innerHTML = 0;
+  } else {
+    document.getElementById("cartCount").innerHTML = localStorage.getItem(
+      "cartCount"
+    );
+  }
 
   // connect to backend
 

@@ -4,7 +4,7 @@
   font-weight: 600;
   font-size: 24px;
   margin-top: 100px;
-  margin-left: 200px;
+  margin-left: 70px;
   color: #1b1919; }
 
 .clothing-accessories-container {
@@ -15,7 +15,7 @@
   padding: 0 4%; }
 
 .card {
-  width: 15%;
+  width: 17%;
   min-width: 200px;
   height: auto;
   margin: 30px 10px;
@@ -144,6 +144,32 @@
 .bigger {
   transform: scale(1.1, 1.1); }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: 4% auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; }
+  .preview-box {
+    width: 100%;
+    display: flex; }
+  .right-product-column {
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 10px; }
+  .product-description h1 {
+    font-size: 24px;
+    letter-spacing: 1px; }
+  #u-margin-left {
+    padding-left: 0px; }
+  .btn button {
+    font-size: 16px;
+    padding: 14px 28px;
+    border-radius: 6px;
+    margin-top: 18px;
+    font-weight: 600; } }
+
 footer {
   width: 100%;
   background-color: #1c1b1e;
@@ -176,6 +202,29 @@ footer > div {
   text-transform: uppercase;
   font-size: 14px;
   opacity: 0.8; }
+
+@media (max-width: 768px) {
+  footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0; }
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 6px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.8; }
+  footer > div:first-of-type {
+    padding-left: 10%; }
+  footer > div {
+    padding-left: 10%; } }
 
 .u-decoration-none {
   text-decoration: none; }
@@ -296,6 +345,70 @@ footer > div {
     background-color: #0ebb4d;
     cursor: pointer; }
 
+@media (max-width: 768px) {
+  #checkout-mainSection {
+    padding: 2% 8%;
+    box-sizing: border-box; }
+  #checkout-mainheading {
+    font-size: 28px;
+    margin-bottom: 24px; }
+  #checkout-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
+  #cartList {
+    width: 100%; }
+  .checkout-second-div {
+    width: 100%;
+    height: fit-content;
+    margin-top: 24px;
+    margin-left: 1%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    padding: 8px; }
+  .checkout-sectionHeading {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px; }
+  #total-amount {
+    color: black;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 4px; }
+  #btn-place-order {
+    background-color: #009688;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 9px 18px;
+    border-radius: 6px;
+    margin-top: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    color: white; }
+  .empty-cart-box {
+    margin: 100px 6px 20px;
+    padding: 1% 4%; }
+  .empty-cart i {
+    font-size: 90px;
+    margin-bottom: 30px; }
+  .empty-cart h2 {
+    font-size: 18px; }
+  .empty-cart p {
+    font-size: 14px;
+    margin-bottom: 24px; }
+  .empty-cart a {
+    padding: 2% 8%;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px; } }
+
 .orderConfirmed-mainSection {
   width: 100%;
   min-height: 80vh;
@@ -345,6 +458,22 @@ footer > div {
   100% {
     transform: scale(1, 1); } }
 
+@media (max-width: 768px) {
+  .orderConfirmed-mainSection {
+    margin-top: 70px; }
+  #tick-wrapper {
+    width: 150px;
+    height: 150px;
+    padding: 20px; }
+  .oC-main-heading {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 12px; }
+  .oC-section-heading {
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding-left: 12px; } }
+
 * {
   box-sizing: border-box;
   padding: 0; }
@@ -371,7 +500,7 @@ body {
   border-top: 0.1px solid #fff; }
 
 #profile-icon {
-  font-size: 32px;
+  font-size: 26px;
   color: black;
   cursor: pointer;
   margin-left: 30px; }
@@ -393,7 +522,7 @@ body {
 
 nav {
   width: 100%;
-  padding: 16px 32px;
+  padding: 8px 32px;
   box-shadow: 0 2px 5px #ccc;
   background-color: white;
   z-index: 10;
@@ -403,14 +532,14 @@ nav {
 
 .nav-01 h1 {
   margin-right: 16px;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 400; }
 
 .nav-01 span {
   font-weight: 700; }
 
 .nav-01 h3 {
-  font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
   color: black;
   margin-left: 32px;
@@ -443,21 +572,16 @@ nav {
   position: relative;
   margin-right: 32px; }
   .right-nav i {
-    font-size: 22px; }
-  .right-nav img {
-    width: 50px;
-    height: 50px;
-    margin-left: 16px;
-    border-radius: 50%; }
+    font-size: 20px; }
 
 .cart-wrapper {
   position: relative; }
   .cart-wrapper i {
     cursor: pointer; }
   .cart-wrapper p {
-    width: 18px;
-    height: 18px;
-    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
     margin: 0;
     box-sizing: border-box;
     text-align: center;
@@ -467,7 +591,8 @@ nav {
     border-radius: 50%;
     position: absolute;
     top: -12px;
-    right: -12px; }
+    right: -14px;
+    padding: 2% 4%; }
 
 main {
   display: flex;
@@ -493,9 +618,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  #brand {
+    margin: 0 8px;
+    cursor: pointer; }
   .nav-01 h1 {
-    margin-right: 16px;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400; }
   .nav-01 span {
     font-weight: 700; }
@@ -504,4 +631,43 @@ main {
   .nav-01 h3 {
     display: none; }
   .search-wrapper {
-    display: none; } }
+    display: none; }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14%; }
+  #slideshow {
+    width: 90%;
+    height: 150px; }
+  .primary-heading {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 7px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+    padding-bottom: 0;
+    color: #1b1919; }
+  .right-nav {
+    position: relative;
+    margin-right: 22px; }
+    .right-nav i {
+      font-size: 14px; }
+  #profile-icon {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    margin-left: 25px; }
+  .cart-wrapper p {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1% 2%;
+    top: -8px;
+    right: -14px; }
+  #edyoda-projects-logo {
+    width: 90px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px; } }
