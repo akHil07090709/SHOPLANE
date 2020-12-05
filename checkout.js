@@ -1,10 +1,10 @@
 $(function () {
   $("#cartCount").innerHTML = localStorage.getItem("cartCount");
   $("#brand").click(function () {
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
   });
   $("#continue-shopping").click(function () {
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
   });
   let cartCount = localStorage.getItem("cartCount") || 0;
 

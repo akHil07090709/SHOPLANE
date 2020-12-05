@@ -19,7 +19,7 @@ $(document).ready(function () {
   accessoriesContainer.className = "clothing-accessories-container";
 
   document.getElementById("brand").addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
   });
   let counter = 1;
   function generateCard(data) {
